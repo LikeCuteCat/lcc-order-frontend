@@ -1,6 +1,8 @@
 import React, { FC, ReactNode } from 'react';
 import Link from 'next/link';
-import { BiLogIn } from 'react-icons/bi';
+import { BiLogIn, BiSolidDashboard } from 'react-icons/bi';
+
+import MenuButton from '../customizedUI/MenuButton';
 
 type Props = {
   children: ReactNode;
@@ -13,11 +15,19 @@ const AppLayout: FC<Props> = ({ children }) => {
         <Link href="/">
           <a className="btn btn-ghost normal-case hover:bg-transparent">ICC ORDER</a>
         </Link>
-        <Link href="/login">
-          <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
-            <BiLogIn />
-          </a>
-        </Link>
+        <div>
+          <MenuButton userId="1" />
+          <Link href="/dashboard/1">
+            <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
+              <BiSolidDashboard />
+            </a>
+          </Link>
+          <Link href="/login">
+            <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
+              <BiLogIn />
+            </a>
+          </Link>
+        </div>
       </div>
       <div>{children}</div>
     </div>

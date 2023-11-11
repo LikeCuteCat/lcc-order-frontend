@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin1@gmail.com",
+      "storeName": "존맛김밥",
+      "password": "12345"
+    }
+  ],
+  "store": [
+    {
+      "id": 1,
+      "name": "존맛김밥",
+      "address": "서울시 강남구",
+      "description": "맛있는 김밥",
+      "seat": 5,
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "한식",
+      "storeId": 1,
+      "menus": []
+    }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "name": "김밥",
+      "price": 3000,
+      "description": "맛있는 김밥",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "storeId": 1
+    },
+    {
+      "id": 2,
+      "name": "초밥",
+      "price": 5000,
+      "description": "맛있는 초밥",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "storeId": 1
+    },
+    {
+      "id": 3,
+      "name": "떡볶이",
+      "price": 4000,
+      "description": "맛있는 떡볶이",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "storeId": 1
+    },
+    {
+      "id": 4,
+      "name": "순대",
+      "price": 4000,
+      "description": "맛있는 순대",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "storeId": 1
+    },
+    {
+      "id": 5,
+      "name": "튀김",
+      "price": 4000,
+      "description": "맛있는 튀김",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "storeId": 1
+    },
+    {
+      "id": 6,
+      "name": "떡볶이",
+      "price": 4000,
+      "description": "맛있는 떡볶이",
+      "image": "https://cdn.pixabay.com/photo/201",
+      "userId": 1,
+      "storeId": 1
+    }
+  ]
+}
