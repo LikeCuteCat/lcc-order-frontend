@@ -27,13 +27,18 @@ const MenuButton: FC<Props> = ({ userId }) => {
           <div className="text-3xl text-center">ICC ORDER</div>
           <div className="divider" />
           <li>
+            <Link href={basePath}>
+              <a>가게 대시보드</a>
+            </Link>
+          </li>
+          <li>
             <Link href={`${basePath}/profile`}>
-              <a>Profile</a>
+              <a>가게 프로필</a>
             </Link>
           </li>
           <li>
             <Link href={`${basePath}/menu`}>
-              <a>Menu Setting</a>
+              <a>매뉴판 꾸미기</a>
             </Link>
           </li>
         </ul>
