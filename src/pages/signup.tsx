@@ -1,10 +1,12 @@
 import React, { useCallback, useState, ChangeEvent } from 'react';
 import type { NextPage } from 'next';
 import { css } from '@emotion/react';
+import {useMutation} from 'react-query';
 
 import AppLayout from '../components/layout/AppLayout';
 import useInput from '../hooks/useInput';
 import Spacing from '../components/layout/Spacing';
+import {signupAPI} from '../apis/user'
 
 const wrapperStyle = css`
   width: 100%;

@@ -20,7 +20,7 @@ const AppLayout: FC<Props> = ({ children }) => {
         </Link>
         <div>
           {inDashbordPage && <MenuButton userId="1" />}
-          <Link href="/dashboard/1">
+          <Link href="/dashboard">
             <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
               <BiSolidDashboard />
             </a>

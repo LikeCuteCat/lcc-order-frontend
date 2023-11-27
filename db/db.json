@@ -1,5 +1,5 @@
 {
-  "users": [
+  "user": [
     {
       "id": 1,
       "email": "admin1@gmail.com",
@@ -18,23 +18,32 @@
       "userId": 1
     }
   ],
-  "categories": [
+  "category": [
     {
       "id": 1,
-      "name": "한식",
-      "storeId": 1,
-      "menus": []
+      "name": "메인식사",
+      "storeId": 1
+    },
+    {
+      "id": 2,
+      "name": "사이드",
+      "storeId": 1
+    },
+    {
+      "id": 3,
+      "name": "음료 & 주류",
+      "storeId": 1
     }
   ],
-  "menus": [
+  "food": [
     {
       "id": 1,
       "name": "김밥",
       "price": 3000,
       "description": "맛있는 김밥",
       "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
-      "userId": 1,
-      "storeId": 1
+      "storeId": 1,
+      "categoryId":1
     },
     {
       "id": 2,
@@ -43,7 +52,7 @@
       "description": "맛있는 초밥",
       "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
       "userId": 1,
-      "storeId": 1
+      "categoryId":1
     },
     {
       "id": 3,
@@ -52,7 +61,7 @@
       "description": "맛있는 떡볶이",
       "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
       "userId": 1,
-      "storeId": 1
+      "categoryId":1
     },
     {
       "id": 4,
@@ -61,7 +70,7 @@
       "description": "맛있는 순대",
       "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
       "userId": 1,
-      "storeId": 1
+      "categoryId":1
     },
     {
       "id": 5,
@@ -70,16 +79,16 @@
       "description": "맛있는 튀김",
       "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
       "userId": 1,
-      "storeId": 1
+      "categoryId":1
     },
     {
-      "id": 6,
-      "name": "떡볶이",
-      "price": 4000,
-      "description": "맛있는 떡볶이",
-      "image": "https://cdn.pixabay.com/photo/201",
+      "id": 7,
+      "name": "콜라 & 사이다",
+      "price": 1000,
+      "description": "매운맛 짠맛을 잠재워줄 시원한 음료수.",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
       "userId": 1,
-      "storeId": 1
+      "categoryId":3
     }
   ]
 }

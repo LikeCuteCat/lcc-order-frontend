@@ -8,7 +8,7 @@ type Props = {
 };
 
 const MenuButton: FC<Props> = ({ userId }) => {
-  const basePath: string = `/dashboard/${userId}`;
+  const basePath: string = `/dashboard`;
 
   return (
     <div className="drawer">

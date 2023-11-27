@@ -6,12 +6,15 @@
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start-json-server": "json-server --watch ./db/db.json -p 3065"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "axios": "^1.6.2",
     "daisyui": "^3.9.4",
+    "immer": "^10.0.3",
     "json-server": "^0.17.4",
     "next": "12",
     "react": "18.2.0",
