@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start-json-server": "json-server --watch ./db/db.json -p 3065"
+    "start-json-server": "json-server --watch ./db/db.json -p 3065 --host 0.0.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
