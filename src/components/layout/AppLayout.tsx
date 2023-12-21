@@ -1,17 +1,17 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode, useEffect } from 'react';
 import Link from 'next/link';
 import { BiLogIn, BiSolidDashboard } from 'react-icons/bi';
-import { useRouter } from 'next/router';
+import { useRecoilValue } from 'recoil';
 
-import MenuButton from '../customizedUI/MenuButton';
+import { user } from '../../recoil';
 
 type Props = {
   children: ReactNode;
 };
 
 const AppLayout: FC<Props> = ({ children }) => {
-  const router = useRouter();
-  const inDashbordPage = router.pathname.includes('dashboard');
+  const { me } = useRecoilValue(user);
+
   return (
     <div className="container mx-auto max-w-screen-lg">
       <div className="navbar bg-base-100 size-lg flex justify-between">
@@ -19,17 +19,19 @@ const AppLayout: FC<Props> = ({ children }) => {
           <a className="btn btn-ghost normal-case hover:bg-transparent">ICC ORDER</a>
         </Link>
         <div>
-          {inDashbordPage && <MenuButton userId="1" />}
-          <Link href="/dashboard">
-            <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
-              <BiSolidDashboard />
-            </a>
-          </Link>
-          <Link href="/login">
-            <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
-              <BiLogIn />
-            </a>
-          </Link>
+          {me ? (
+            <Link href="/dashboard">
+              <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
+                <BiSolidDashboard />
+              </a>
+            </Link>
+          ) : (
+            <Link href="/login">
+              <a className="btn btn-ghost normal-case text-xl hover:bg-transparent">
+                <BiLogIn />
+              </a>
+            </Link>
+          )}
         </div>
       </div>
       <div>{children}</div>

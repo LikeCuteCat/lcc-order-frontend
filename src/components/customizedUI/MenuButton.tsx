@@ -3,11 +3,7 @@ import { BiMenu } from 'react-icons/bi';
 import Spacing from '../layout/Spacing';
 import Link from 'next/link';
 
-type Props = {
-  userId: string;
-};
-
-const MenuButton: FC<Props> = ({ userId }) => {
+const MenuButton: FC = () => {
   const basePath: string = `/dashboard`;
 
   return (

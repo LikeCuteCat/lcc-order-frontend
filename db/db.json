@@ -2,9 +2,10 @@
   "user": [
     {
       "id": 1,
+      "type": "admin",
       "email": "admin1@gmail.com",
-      "storeName": "존맛김밥",
-      "password": "12345"
+      "password": "12345",
+      "storeId": 1
     }
   ],
   "store": [
@@ -33,10 +34,6 @@
       "id": 3,
       "name": "음료 & 주류",
       "storeId": 1
-    },
-    {
-      "name": "음료수",
-      "id": 4
     }
   ],
   "food": [
@@ -93,6 +90,42 @@
       "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
       "userId": 1,
       "categoryId": 3
+    },
+    {
+      "id": 8,
+      "name": "시원한 생맥주",
+      "price": 6000,
+      "description": "매운맛 짠맛을 잠재워줄 시원한 음료수.",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "categoryId": 3
+    },
+    {
+      "id": 9,
+      "name": "시원한 소주",
+      "price": 3000,
+      "description": "매운맛 짠맛을 잠재워줄 시원한 음료수.",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "categoryId": 3
+    },
+    {
+      "id": 10,
+      "name": "감자튀김",
+      "price": 12000,
+      "description": "매운맛 짠맛을 잠재워줄 시원한 음료수.",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "categoryId": 2
+    },
+    {
+      "id": 11,
+      "name": "튀김",
+      "price": 10000,
+      "description": "매운맛 짠맛을 잠재워줄 시원한 음료수.",
+      "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/architecture-1836070_960_720.jpg",
+      "userId": 1,
+      "categoryId": 2
     }
   ]
 }
