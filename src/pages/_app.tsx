@@ -1,5 +1,5 @@
 import '../../styles/globals.css';
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import type { AppProps } from 'next/app';
 import { NextWebVitalsMetric } from 'next/app';
 import { QueryClient, QueryClientProvider, Hydrate } from 'react-query';

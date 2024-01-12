@@ -10,7 +10,7 @@
     "start-json-server": "json-server --watch ./db/db.json -p 3065"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "11.11.3",
     "@emotion/styled": "^11.11.0",
     "axios": "^1.6.2",
     "daisyui": "^3.9.4",

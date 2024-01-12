@@ -19,6 +19,43 @@
       "userId": 1
     }
   ],
+  "table": [
+    {
+      "id": 1,
+      "name": "1번 테이블",
+      "bucket": [],
+      "order": [],
+      "storeId": 1
+    },
+    {
+      "id": 2,
+      "name": "2번 테이블",
+      "bucket": [],
+      "order": [],
+      "storeId": 1
+    },
+    {
+      "id": 3,
+      "name": "3번 테이블",
+      "bucket": [],
+      "order": [],
+      "storeId": 1
+    },
+    {
+      "id": 4,
+      "name": "4번 테이블",
+      "bucket": [],
+      "order": [],
+      "storeId": 1
+    },
+    {
+      "id": 5,
+      "name": "5번 테이블",
+      "bucket": [],
+      "order": [],
+      "storeId": 1
+    }
+  ],
   "category": [
     {
       "id": 1,

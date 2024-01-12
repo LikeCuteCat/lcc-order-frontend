@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  frontend:
+    restart: always
+    container_name: icc-order-front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: yarn run concurrently "yarn dev" "yarn start-json-server"
+    ports:
+      - "3000:3000"
+      - "3065:3065"
